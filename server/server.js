@@ -43,7 +43,7 @@ app.put('/books/:id', (req, res) => {
 //DELETE
 app.delete('/books/:id', (req, res) => {
     books = books.filter(book => book.id !== parseInt(req.params.id));
-    res.status(404).send(books);
+    res.json(books);
 });
 
 

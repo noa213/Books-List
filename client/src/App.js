@@ -49,6 +49,7 @@ function App() {
   };
 
   const deleteBook = async (id) => {
+    
     const response = await fetch(`http://localhost:5000/books/${id}`, {
       method: "DELETE"
     });
