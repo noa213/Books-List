@@ -73,9 +73,14 @@ function App() {
         <button onClick={addBook}>Add Book</button>
       )}
       {books.map((book, index) => (
-        <div key={index} className='book'><strong>{book.title}</strong> by {book.author}
-          <button onClick={() => editBook(book)}>Edit</button>
-          <button onClick={() => deleteBook(book.id)}>Delete</button>
+        <div key={index} className='book'>
+          <span>
+            <strong>{book.title}</strong> by {book.author}
+          </span>
+          <span>
+            <button onClick={() => editBook(book)}>Edit</button>
+            <button onClick={() => deleteBook(book.id)}>Delete</button>
+          </span>
         </div>
       ))}
     </div>

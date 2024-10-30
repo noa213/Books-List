@@ -17,6 +17,7 @@ input {
 
 button {
     padding: 10px 20px;
+    margin-left: 5px;
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -29,4 +30,11 @@ button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.book:hover {
+    background-color: #4caf4f4c;
 }
